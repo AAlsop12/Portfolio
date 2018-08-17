@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 
+import Contact from './contact';
+
 class Home extends Component {
     render() {
         return (
             <div className='home'>
-                HOME
+                <Contact className='contact'/>
             </div>
         )
     }

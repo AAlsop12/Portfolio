@@ -8,7 +8,7 @@ class Contact extends Component {
         return (
             <div className={`{$className} contact`}>
                 <PageTitle className='contact__page-title' title='Contact'/>
-                <h1> HERE IS MY CONTACT INFORMATION </h1>
+                <h1 className='contact__test'> HERE IS MY CONTACT INFORMATION </h1>
             </div>
         )
     }

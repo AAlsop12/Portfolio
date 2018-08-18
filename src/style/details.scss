@@ -2,14 +2,16 @@
 .details {
     display: grid;
     grid-row-gap: 5px;
-    
-
 
     &__title {
-        padding-bottom: 5px;
+        padding-bottom: 12px;
         border-bottom: 1px solid #CCC;
         font-size: 14px;
         font-weight: 600;
+        background-color: rgba(white, .5);
+        padding: 7px;
+        border-radius: 5px;
+
     }
 
     &__links {
@@ -18,8 +20,13 @@
         display: grid;
         grid-row-gap: 10px;
         font-weight: 600;
+        background-color: rgba(white, .5);
+        border-radius: 5px;
         & > * {
             cursor: pointer;
         }
+    }
+    &__link {
+        padding: 7px;
     }
 }

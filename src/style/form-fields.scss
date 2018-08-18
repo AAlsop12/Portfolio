@@ -24,15 +24,18 @@
 .form-button {
     &__button {
         height: 38px;
-        width: 243px;
+        width: 426px;
         border-radius: 20px;
-        background-color: #00CB79;
+        background-color: #4E3011;
 
         font-size: 16px;
-        color: white;
+        font-family: 'Gruppo', cursive;
+        color: #B1A08F;
 
         &:focus {
             outline: none;
         }
     }
 }
+
+// rgba( $base-color, .7 )

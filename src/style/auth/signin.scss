@@ -8,9 +8,10 @@
 
     &__form {
         display: grid;
-        grid-template-rows: [email-s] 64px [email-e password-s] 64px [password-e] minmax(20px, 289px) [line-s] 2px [line-e login-s] 38px [login-e];
+        grid-template-rows: [s email-s] 64px [email-e password-s] 64px [password-e] minmax(20px, 200px) [login-s] 38px [login-e e];
         grid-template-columns: 1fr;
     }
+
 }
 
 .sign-in-form {

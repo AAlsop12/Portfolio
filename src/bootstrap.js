@@ -15,6 +15,7 @@ import Layout from './components/layout';
 import Home from './components/home';
 import Signin from './components/auth/signin';
 import Signup from './components/auth/signup';
+import Contact from './components/contact';
 
 
 function main() {
@@ -26,6 +27,8 @@ function main() {
             <Route path='/' exact component={Home}/>
             <Route path='/signin' exact component={Signin}/>
             <Route path='/signup' exact component={Signup}/>
+            <Route path='/contact' exact component={Contact}/>
+
           </Switch>
         </Layout>
       </Router>

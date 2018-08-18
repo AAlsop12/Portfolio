@@ -11,10 +11,15 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    font-family: 'Gruppo', cursive;
+    color: darkolivegreen;
+}
+
 @import 'layout';
-@import 'home';
 @import 'headernavbar';
 @import 'auth/signin';
 @import 'auth/signup';
 @import 'page-title';
 @import 'contact';
+@import 'form-fields';

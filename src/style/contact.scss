@@ -1,7 +1,5 @@
 .contact {
-    grid-row: contact-s/contact-e;
-    grid-column: 1/-1;
-    display: grid;
-    justify-content: end;
-    align-content: end;
+    grid-row: content-s/content-e;
+    grid-column: s/e;
 }
+

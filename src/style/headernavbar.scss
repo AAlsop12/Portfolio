@@ -1,6 +1,6 @@
 .header {
     grid-row: header-s/header-e;
-    grid-column: 1/-1;
+    grid-column: s/e;
     display: grid;
     justify-content: center;
 }

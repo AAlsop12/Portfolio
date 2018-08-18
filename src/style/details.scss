@@ -1,0 +1,22 @@
+
+.details {
+    display: grid;
+    grid-row-gap: 5px;
+
+    &__title {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #CCC;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    &__links {
+        padding-top: 15px;
+        font-size: 14px;
+        display: grid;
+        grid-row-gap: 10px;
+        & > * {
+            cursor: pointer;
+        }
+    }
+}

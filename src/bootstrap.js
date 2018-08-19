@@ -16,6 +16,7 @@ import Home from './components/home';
 import Signin from './components/auth/signin';
 import Signup from './components/auth/signup';
 import Contact from './components/contact';
+import Account from './components/account/account';
 
 
 function main() {
@@ -28,6 +29,8 @@ function main() {
             <Route path='/signin' exact component={Signin}/>
             <Route path='/signup' exact component={Signup}/>
             <Route path='/contact' exact component={Contact}/>
+            <Route path='/account' exact component={Account}/>
+
 
           </Switch>
         </Layout>

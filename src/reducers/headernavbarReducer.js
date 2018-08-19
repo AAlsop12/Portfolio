@@ -14,10 +14,12 @@ const INITIAL_STATE = {
     ],
     navbarLinks: [
         {
-            title: 'About Me'
+            title: 'About Me',
+            active: true
         },
         {
-            title: 'My Mission'
+            title: 'My Mission',
+            active: false
         }
     ]
 }

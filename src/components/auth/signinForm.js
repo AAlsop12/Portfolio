@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
 import { reduxForm, Field } from 'redux-form';
+
+import { FormInput, FormButton } from '../formFields';
 import Details from '../details';
 
 import history from '../../history';
-
-import { FormInput, FormButton } from '../formFields';
 
 class SignInForm extends Component {
     render() {
@@ -13,7 +13,7 @@ class SignInForm extends Component {
         const links = [
             {
                 _id: 0,
-                title: 'Not registered?  Create account here',
+                title: 'Not registered? Create account here',
                 onClick: () => history.push('/signup')
             },
             {
@@ -26,7 +26,6 @@ class SignInForm extends Component {
                 title: 'Forgot password?',
                 onClick: () => console.log('forgot password')
             }
-            
         ]
         return (
             <form onSubmit={handleSubmit} className={`${className} sign-in-form`}>
@@ -42,8 +41,9 @@ class SignInForm extends Component {
                 placeholder='Password'
                 name='password'
                 component={FormInput}/>
+                <div className='sign-in-form__line'></div>
                 <Field className='sign-in-form__login'
-                onClick={() => console.log('SUBMITTING RESPONSE')}
+                onClick={() => history.push('/account')}
                 type='submit'
                 title='Login'
                 name='login'

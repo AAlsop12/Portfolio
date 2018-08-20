@@ -21,7 +21,7 @@ export default function(state = INITIAL_STATE, action) {
                 ...state,
                 navbarLinks: action.payload
             }
-        case CHANGE_NAVBAR_ACTIVE:
+        case CHANGE_NAVBAR_ACTIVE: 
             const navbarLinks = state.navbarLinks.map(link => {
                 link.active = false;
                 if(link._id == action.payload) {

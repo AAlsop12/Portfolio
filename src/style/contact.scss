@@ -1,6 +1,17 @@
 .contact {
+    display: grid;
     grid-row: content-s/content-e;
     grid-column: s/e;
 
+    &__page-title {
+        display: grid;
+        grid-row: content-s/content-e;
+        grid-column: s/e;
+    }
+
+    &__info {
+        grid-row: content-s/content-e;
+        grid-column: s/e;
+    }
 }
 

@@ -1,0 +1,34 @@
+.button__contact {
+    grid-row: content-s/content-e;
+    grid-column: s/e;
+    justify-self: end;
+    align-self: end;
+
+    width: 75px;
+    height: 75px;
+    font-size: 14px;
+    font-family: 'Gruppo', cursive;
+    border-radius: 100px;
+    background-color: rgba(#8FB192, .5);
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 5px;
+    color: #CCC;
+    
+    
+}
+
+.button__contact:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.button__contact:Active {
+    transform: translateY(1px);
+    outline: none;
+    border: none;
+}
+
+.button__contact:focus {
+    outline: 0;
+}

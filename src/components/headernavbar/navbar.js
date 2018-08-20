@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
 class Navbar extends Component {
+
     render() {
         return (
             <div className='navbar'>

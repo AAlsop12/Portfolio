@@ -17,6 +17,10 @@ import Signin from './components/auth/signin';
 import Signup from './components/auth/signup';
 import Contact from './components/contact';
 import Account from './components/account/account';
+import AccountInformation from './components/account/accountInformation';
+import About from './components/about';
+
+
 
 
 function main() {
@@ -25,12 +29,14 @@ function main() {
       <Router history={history}>
         <Layout>
           <Switch>
-            <Route path='/' exact component={Home}/>
+
+            <Route path='/' exact component={Account}/>
             <Route path='/signin' exact component={Signin}/>
             <Route path='/signup' exact component={Signup}/>
             <Route path='/contact' exact component={Contact}/>
             <Route path='/account' exact component={Account}/>
-
+            <Route path='/accountInformation' exact component={AccountInformation}/>
+            <Route path='/about' exact component={About}/>
 
           </Switch>
         </Layout>

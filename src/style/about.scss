@@ -1,0 +1,15 @@
+.about {
+    display: grid;
+    grid-template-rows:   [header-s] 50px [header-e navbar-s] 40px [navbar-e content-s] 600px [content-e];
+    grid-template-columns: 100px [content-s] 1fr  [content-e] 100px;
+
+    &__title {
+        grid-row: content-s/content-e;
+        grid-column: content-s/content-e;
+    }
+    &__info {
+        grid-row: content-s/content-e;
+        grid-column: content-s/content-e;
+        font-size: 50px;
+    }
+}

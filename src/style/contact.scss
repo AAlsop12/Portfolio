@@ -1,17 +1,14 @@
 .contact {
-    display: grid;
     grid-row: content-s/content-e;
     grid-column: s/e;
+    font-size: 50px;
 
     &__page-title {
-        display: grid;
-        grid-row: content-s/content-e;
-        grid-column: s/e;
+
     }
 
     &__info {
-        grid-row: content-s/content-e;
-        grid-column: s/e;
+
     }
 }
 

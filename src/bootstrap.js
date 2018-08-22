@@ -19,6 +19,7 @@ import Contact from './components/contact';
 import Account from './components/account/account';
 import AccountInformation from './components/account/accountInformation';
 import About from './components/about';
+import Welcome from './components/welcome';
 
 
 
@@ -30,11 +31,11 @@ function main() {
         <Layout>
           <Switch>
 
-            <Route path='/' exact component={Account}/>
+            <Route path='/welcome' exact component={Welcome}/>
+            <Route path='/account' exact component={Account}/>
             <Route path='/signin' exact component={Signin}/>
             <Route path='/signup' exact component={Signup}/>
             <Route path='/contact' exact component={Contact}/>
-            <Route path='/account' exact component={Account}/>
             <Route path='/accountInformation' exact component={AccountInformation}/>
             <Route path='/about' exact component={About}/>
 

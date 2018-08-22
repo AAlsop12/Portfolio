@@ -6,7 +6,8 @@ import * as actions from '../../actions';
 import AccountInformation from './accountInformation';
 import About from '../about';
 import Contact from '../contact';
-import Home from '../home';
+import Welcome from '../welcome';
+
 
 
 class Account extends Component {
@@ -31,7 +32,8 @@ class Account extends Component {
                 _id: 0,
                 title: 'About Me',
                 active: false,
-                component: <About/>
+                // component: <About/>
+                path: '/about'
             },
             {
                 _id: 1,
@@ -49,13 +51,22 @@ class Account extends Component {
                 _id: 3,
                 title: 'Account Information',
                 active: false,
-                component: <AccountInformation/>
+                // component: <AccountInformation/>
+                path: '/accountInformation'
             },
             {
                 _id: 4,
                 title: 'Contact',
                 active: false,
-                component: <Contact/>
+                // component: <Contact/>,
+                path: '/contact'
+            },
+            {
+                _id: 5,
+                title: 'Welcome',
+                active: false,
+                // component: <Welcome/>,
+                path: '/welcome'
             },
 
 
@@ -68,22 +79,11 @@ class Account extends Component {
         this.props.setNavbarLinks(navbarLinks);
     }
 
-    renderContent() {
-        let jsx;
-        if(this.props.navbarLinks) {
-            this.props.navbarLinks.forEach(link => {
-                if(link.active) {
-                    jsx = link.component;
-                }
-            })
-        }
-        return jsx;
-    }
 
     render() {
         return (
-            <div>
-                { this.renderContent() }
+            <div className='allTabs'>
+                let jsx;
             </div>
         )
     }

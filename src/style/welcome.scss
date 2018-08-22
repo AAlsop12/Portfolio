@@ -1,0 +1,27 @@
+.welcome {
+    grid-row: content-s/content-e;
+    grid-column: s/e;
+    background-color: rgba(white, .4);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+
+    
+    display: grid;
+    grid-template-rows: [title-s] 20px [title-e greeting-s] 400px [greeting-e instructions-s] 15px [instructions-e];
+    grid-template-columns: [s] 1fr [e];
+
+    &__title {
+        grid-row: title-e/title-e;
+        grid-column: s/e;
+    }
+    &__greeting {
+        grid-row: greeting-e/greeting-e;
+        grid-column: s/e;
+    }
+
+    &__instructions {
+        grid-row: instructions-e/instructions-e;
+        grid-column: s/e;
+    }
+}

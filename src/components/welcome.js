@@ -3,12 +3,18 @@ import PageTitle from './pageTitle';
 
 class Welcome extends Component {
     render() {
-        const { className, title } = this.props;
+        const { className, title, icon } = this.props;
+        
         return (
             <div className='welcome'>
-                <PageTitle className='welcome__page-title' title='Welcome'/>
-                <div className='welcome__greeting'>Welcome to my website!</div>
-                <div className='welcome__instructions'>Go ahead and explore.</div>
+                <div className='welcome__title'>Welcome</div>
+                <div className='welcome__greeting'>Thanks for stopping by!</div>
+                <div className='welcome__instructions'>Go ahead and explore</div>
+                <div className='welcome__arrow'>
+                    <i class="fas fa-angle-double-right"></i>
+                </div>
+    
+
             </div>
         )
     }

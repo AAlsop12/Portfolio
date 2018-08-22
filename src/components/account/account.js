@@ -61,13 +61,7 @@ class Account extends Component {
                 // component: <Contact/>,
                 path: '/contact'
             },
-            {
-                _id: 5,
-                title: 'Welcome',
-                active: false,
-                // component: <Welcome/>,
-                path: '/welcome'
-            },
+   
 
 
 
@@ -83,7 +77,7 @@ class Account extends Component {
     render() {
         return (
             <div className='allTabs'>
-                let jsx;
+               
             </div>
         )
     }

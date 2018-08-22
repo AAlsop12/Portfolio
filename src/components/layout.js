@@ -3,9 +3,8 @@ import React, { Component } from 'react';
 import Header from './headernavbar/header';
 import Navbar from './headernavbar/navbar';
 import Button from './button';
-import About  from './about';
-import Welcome from './welcome';
 import Account from './account/account';
+import Quote from './quote';
 
 class Layout extends Component {
   render() {
@@ -16,7 +15,7 @@ class Layout extends Component {
         <Account />
         <Button />
         {this.props.children}
-
+        <Quote />
       </div>
     );
   }

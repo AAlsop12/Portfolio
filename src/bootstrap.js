@@ -31,6 +31,7 @@ function main() {
         <Layout>
           <Switch>
 
+            <Route path='/' exact component={Welcome}/>
             <Route path='/welcome' exact component={Welcome}/>
             <Route path='/account' exact component={Account}/>
             <Route path='/signin' exact component={Signin}/>

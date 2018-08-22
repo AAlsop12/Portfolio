@@ -17,38 +17,44 @@
     border-radius: 5px;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
     color: white;
+    width: 350px;
+    z-index: 5;
 
-    
-    width: 400px;
-
-
-    // transform: translateX(-400px);
-    // transition: all .3s ease;
-
-    // &:hover {
-       
-    //     transform: translateX(-250px);
-    // }
 
     display: grid;
-    grid-template-rows: [title-s] 20px [title-e greeting-s] 400px [greeting-e] 50px [instructions-s] 15px [instructions-e];
+    grid-template-rows: [title-s] 20px [title-e] 400px [greeting-s] 24px [greeting-e] 50px [instructions-s] 24px [instructions-e] 15px [icon-s] 30px [icon-e];
     grid-template-columns: [s] 1fr [e];
 
     &__title {
-        grid-row: title-e/title-e;
+        grid-row: title-s/title-e;
         grid-column: s/e;
+        color: white;
+        margin-top: 30px;
+        font-size: 48px;
+        padding: 10px;
     }
     &__greeting {
-        grid-row: greeting-e/greeting-e;
+        grid-row: greeting-s/greeting-e;
         grid-column: s/e;
-        
         font-size: 30px;
+        justify-self: center;
     }
 
     &__instructions {
-        grid-row: instructions-e/instructions-e;
+        grid-row: instructions-s/instructions-e;
         grid-column: s/e;
-
+        font-family: 'Gruppo', cursive;
         font-size: 18px;
+        justify-self: center;
+        
     }
+    &__arrow {
+        grid-row: icon-s/icon-e;
+        grid-column: s/e;
+    }
+
+}
+
+.icon {
+    font-size: 100px;
 }

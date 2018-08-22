@@ -1,7 +1,7 @@
 .button__contact {
     grid-row: content-s/content-e;
-    grid-column: s/e;
-    justify-self: end;
+    grid-column: button-s/button-e;
+    justify-self: center;
     align-self: end;
 
     width: 75px;
@@ -14,12 +14,14 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     padding: 5px;
     color: #CCC;
+
+    transition: all .05s ease;
     
     
 }
 
 .button__contact:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     cursor: pointer;
 }
 

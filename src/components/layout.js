@@ -14,6 +14,7 @@ class Layout extends Component {
         <Header />
         <Navbar />
         <Account />
+        <Button />
         {this.props.children}
 
       </div>

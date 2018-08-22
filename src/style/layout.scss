@@ -1,6 +1,5 @@
 .layout  {
     display: grid;
     grid-template-rows:[header-s] 50px [header-e navbar-s] 40px [navbar-e] 15px [content-s] 600px [content-e];
-    grid-template-columns: minmax(20px, 250px) [s] 1fr  [e] minmax(20px, 250px);
-
+    grid-template-columns: [welcome-s] 250px [welcome-e content-s] 1fr  [e content-e button-s] minmax(20px, 250px) 50px [button-e];
 }

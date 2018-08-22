@@ -1,6 +1,11 @@
 .about {
     grid-row: content-s/content-e;
     grid-column: s/e;
+    background-color: rgba(white, .4);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+
     font-size: 50px;
 
     &__title {

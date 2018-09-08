@@ -6,7 +6,7 @@ class Project extends Component {
         const { className, title, picture } = this.props;
         return (
             <div className={className}>
-                {title}
+                <a href="https://desolate-sierra-42605.herokuapp.com/">{title}</a>
                 {this.props.children}
             </div>
         )

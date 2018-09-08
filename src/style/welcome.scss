@@ -37,7 +37,7 @@
         grid-row: greeting-s/greeting-e;
         grid-column: s/e;
         font-size: 30px;
-        justify-self: center;
+        justify-self: left;
     }
 
     &__instructions {
@@ -45,16 +45,38 @@
         grid-column: s/e;
         font-family: 'Gruppo', cursive;
         font-size: 18px;
-        justify-self: center;
+        justify-self: left;
         
     }
     &__arrow {
         grid-row: icon-s/icon-e;
         grid-column: s/e;
+        font-size: 50px;
+        weight: 10;
+        justify-self: center;
     }
 
 }
 
 .icon {
     font-size: 100px;
+}
+
+// .welcome-hidden {
+//     transform: translateX(520px)
+// }
+
+.welcome__arrow:hover {
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+
+.welcome__arrow:Active {
+    transform: translateY(1px);
+    outline: none;
+    border: none;
+}
+
+.welcome__arrow:focus {
+    outline: 0;
 }

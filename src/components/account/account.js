@@ -3,10 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
-import AccountInformation from './accountInformation';
-import About from '../about';
-import Contact from '../contact';
-import Welcome from '../welcome';
+
 
 
 
@@ -32,33 +29,29 @@ class Account extends Component {
                 _id: 0,
                 title: 'About Me',
                 active: false,
-                // component: <About/>
                 path: '/about'
             },
             {
                 _id: 1,
                 title: 'Blog',
                 active: false,
-                // component: <Contact/>
             },
             {
                 _id: 2,
                 title: 'Portfolio',
                 active: false,
-                // component: <Portfolio/>
+                path: '/portfolio'
             },
             {
                 _id: 3,
                 title: 'Account Information',
                 active: false,
-                // component: <AccountInformation/>
                 path: '/accountInformation'
             },
             {
                 _id: 4,
                 title: 'Contact',
                 active: false,
-                // component: <Contact/>,
                 path: '/contact'
             },
    

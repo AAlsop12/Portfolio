@@ -1,0 +1,9 @@
+.portfolio {
+    grid-row: content-s/content-e;
+    grid-column: content-s/content-e;
+
+    display: grid;
+    grid-template-rows: [s title-s] 100px [title-e project-s] 300px [project-e] 1fr [e];
+    grid-template-columns: [s] 1fr [ecom-s] 1fr [ecom-e countdown-s] 1fr [countdown-e madlibs-s] 1fr [madlibs-e] 1fr [e];
+    grid-column-gap: 30px;
+}

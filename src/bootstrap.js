@@ -20,6 +20,7 @@ import Account from './components/account/account';
 import AccountInformation from './components/account/accountInformation';
 import About from './components/about';
 import Welcome from './components/welcome';
+import Portfolio from './components/portfolio/portfolio';
 
 
 
@@ -39,6 +40,7 @@ function main() {
             <Route path='/contact' exact component={Contact}/>
             <Route path='/accountInformation' exact component={AccountInformation}/>
             <Route path='/about' exact component={About}/>
+            <Route path='/portfolio' exact component={Portfolio}/>
 
           </Switch>
         </Layout>

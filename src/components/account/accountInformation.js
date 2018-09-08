@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 
+import PageTitle from '../pageTitle';
+
 class AccountInformation extends Component {
     render() {
         return (
             <div className='account-information'>
-                <h1 className='account-information__top'>ACCOUNT INFO</h1>
+                <PageTitle className='account-information__title' title='Account Information'/>  
                 
             </div>
         )

@@ -3,7 +3,7 @@
     grid-column: content-s/content-e;
 
     display: grid;
-    grid-template-rows: [s title-s] 100px [title-e project-s] 300px [project-e] 1fr [e];
-    grid-template-columns: [s] 1fr [ecom-s] 1fr [ecom-e countdown-s] 1fr [countdown-e madlibs-s] 1fr [madlibs-e] 1fr [e];
+    grid-template-rows: [s title-s] 72px [title-e project-s] 300px [project-e project-two-s] 300px [project-two-e] 100px [e];
+    grid-template-columns: [s] 1fr [ecom-s] 250px [ecom-e countdown-s] 250px [countdown-e madlibs-s] 250px [madlibs-e] 1fr [e];
     grid-column-gap: 30px;
 }

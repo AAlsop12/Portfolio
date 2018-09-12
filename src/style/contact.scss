@@ -2,18 +2,34 @@
     grid-row: content-s/content-e;
     grid-column: content-s/content-e;
     background-color: rgba(white, .4);
-    padding: 15px;
+    padding: 36px;
     border-radius: 5px;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
 
+    display: grid;
 
-    font-size: 50px;
+    // font-size: 50px;
 
-    &__page-title {
-
+    &__name{
+        font-size: 45px;
     }
 
-    &__info {
+    &__phone {
+        font-size: 36px;
+    }
+
+    &__email {
+        font-size: 36px;
+    }
+
+    &__linked-in {
+        font-size: 36px;
+        text-decoration: none;
+    }
+
+    &__github {
+        font-size: 36px;
+        text-decoration: none;
 
     }
 }

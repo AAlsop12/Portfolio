@@ -11,10 +11,12 @@ class Portfolio extends Component {
         return (
             <div className='portfolio'>
                 <PageTitle className='portfolio__title' title='Portfolio'/> 
+                <Project className='ecommerce' title='Ecommmerce'/>
                 <Project className='madlibs' title='Madlibs'/>
                 <Project className='countdown' title='Countdown'/>
-                <Project className='ecommerce' title='Ecommerce'/>
-
+                <Project className='schedule' title='Course Scheduling' link="https://course-scheduling.herokuapp.com"/>
+                <Project className='github' title='Github' link="https://github.com/AAlsop12"/>
+                <Project className='portfolio' title='Portfolio' link="https://aimee-alsop-portfolio.herokuapp.com/"/>
 
             </div>
         )

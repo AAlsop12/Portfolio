@@ -22,7 +22,7 @@
 
 
     display: grid;
-    grid-template-rows: [title-s] 20px [title-e] 400px [greeting-s] 24px [greeting-e] 50px [instructions-s] 24px [instructions-e] 15px [icon-s] 30px [icon-e];
+    grid-template-rows: [title-s] 20px [title-e picture-s] 400px [picture-e greeting-s] 24px [greeting-e] 50px [instructions-s] 24px [instructions-e] 15px [icon-s] 30px [icon-e];
     grid-template-columns: [s] 1fr [e];
 
     &__title {
@@ -45,7 +45,7 @@
         grid-column: s/e;
         font-family: 'Gruppo', cursive;
         font-size: 18px;
-        justify-self: left;
+        justify-self: center;
         
     }
     &__arrow {
@@ -54,6 +54,16 @@
         font-size: 50px;
         weight: 10;
         justify-self: center;
+    }
+    &__aimee-pic {
+        grid-row: picture-s/picture-e;
+        grid-column: s/e;
+        justify-self: center;
+        align-self: center;
+        transform: translateY(20px);
+        border-radius: 100px;
+        box-shadow: 0 2px 6px 0 rgba(0,0,1,0.5);
+
     }
 
 }
@@ -80,3 +90,4 @@
 .welcome__arrow:focus {
     outline: 0;
 }
+

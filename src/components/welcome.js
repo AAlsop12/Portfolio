@@ -16,15 +16,14 @@ class Welcome extends Component {
         const { className, title, icon } = this.props;
         
         return (
-            <div className='welcome   welcome-hidden'>
+            <div className='welcome'>
                 <div className='welcome__title'>Welcome</div>
                 <div className='welcome__greeting'>Thanks for stopping by!</div>
                 <div className='welcome__instructions'>Go ahead and explore</div>
                 <div className='welcome__arrow'>
                     <i className="fas fa-angle-double-right" onClick={this.handleClick}></i>
                 </div>
-    
-
+                <img className="welcome__aimee-pic" src="https://preview.ibb.co/bzB9vU/Aimee.jpg" width='175' height='250'></img>
             </div>
         )
     }

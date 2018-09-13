@@ -32,12 +32,13 @@
         margin-top: 30px;
         font-size: 48px;
         padding: 10px;
+        justify-self: center;
     }
     &__greeting {
         grid-row: greeting-s/greeting-e;
         grid-column: s/e;
         font-size: 30px;
-        justify-self: left;
+        justify-self: center;
     }
 
     &__instructions {

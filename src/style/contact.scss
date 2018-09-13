@@ -7,30 +7,50 @@
     box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
 
     display: grid;
+    grid-template-rows: [s name-s] 1fr [name-e phone-s] 1fr [phone-e email-s] 1fr [email-e linked-s] 1fr [linked-e github-s] 1fr [github-e e];
+    grid-template-columns: [info-s] 1fr [info-e pic-s] 1fr [pic-e];
 
     // font-size: 50px;
 
-    &__name{
+    &__name {
+        grid-row: name-s/name-e;
+        grid-column: info-s/info-e;
         font-size: 45px;
     }
 
     &__phone {
+        grid-row: phone-s/phone-e;
+        grid-column: info-s/info-e;
         font-size: 36px;
     }
 
     &__email {
+        grid-row: email-s/email-e;
+        grid-column: info-s/info-e;
         font-size: 36px;
     }
 
     &__linked-in {
+        grid-row: linked-s/linked-e;
+        grid-column: info-s/info-e;
         font-size: 36px;
         text-decoration: none;
     }
 
     &__github {
+        grid-row: github-s/github-e;
+        grid-column: info-s/info-e;
         font-size: 36px;
         text-decoration: none;
 
+    }
+    &__aimee-pic {
+        grid-row: s/e;
+        grid-column: pic-s/pic-e;
+        justify-self: center;
+        transform: translateY(125px);
+        border-radius: 100px;
+        box-shadow: 0 2px 6px 0 rgba(0,0,1,0.5);
     }
 }
 

@@ -2,78 +2,89 @@
 
     grid-row-gap: 15px;
     
-    &__title {
-        grid-row: title-s/title-e;
-        grid-column: ecom-s/ecom-e;
+    // &__title {
+    //     grid-row: title-s/title-e;
+    //     grid-column: ecom-s/ecom-e;
    
 
-    }
+    // }
         & > * {
-     
+            text-decoration: none;
+            font-size: 36px;
+            text-decoration: none;
+            background-color: rgba(white, .7);
+            padding: 15px;
+            border-radius: 10px;
+            
         }
 
 
         .madlibs {
             grid-row: project-s/project-e;
             grid-column: madlibs-s/madlibs-e;
-            font-size: 36px;
 
-            background-color: rgba(white, .7);
-            padding: 15px;
-            border-radius: 10px;
         }
 
         .ecommerce {
             grid-row: project-s/project-e;
             grid-column: ecom-s/ecom-e;
-            font-size: 36px;
 
-            background-color: rgba(white, .7);
-            padding: 15px;
-            border-radius: 10px;
         }
 
         .countdown {
-            grid-row: project-s/project-e;
-            grid-column: countdown-s/countdown-e;
-            font-size: 36px;
-
-            background-color: rgba(white, .7);
-            padding: 15px;
-            border-radius: 10px;
-        }
-
-        .schedule {
             grid-row: project-two-s/project-two-e;
             grid-column: ecom-s/ecom-e;
             font-size: 36px;
 
-            text-decoration: none;
-            background-color: rgba(white, .7);
-            padding: 15px;
-            border-radius: 10px;
+            &__pic {
+                grid-row: project-two-s/project-two-e;
+                grid-column: ecom-s/ecom-e;
+                justify-self: center;
+                align-self: center;
+                border-radius: 5px;
+            }
+        }
+
+        .schedule {
+            grid-row: project-s/project-e;
+            grid-column: countdown-s/countdown-e;
+
+
+            &__pic {
+                grid-row: project-s/project-e;
+                grid-column: countdown-s/countdown-e;
+                justify-self: center;
+                align-self: center;
+                border-radius: 5px;
+                transform: translateY(40px)
+            }
         }
 
         .github {
             grid-row: project-two-s/project-two-e;
             grid-column: countdown-s/countdown-e;
-            font-size: 36px;
 
-            text-decoration: none;
-            background-color: rgba(white, .7);
-            padding: 15px;
-            border-radius: 10px;
+
+            &__pic {
+                grid-row: project-two-s/project-two-e;
+                grid-column: countdown-s/countdown-e;
+                justify-self: center;
+                align-self: center;
+                border-radius: 5px;
+            }
         }
 
         .portfolio {
             grid-row: project-two-s/project-two-e;
             grid-column: madlibs-s/madlibs-e;
-            font-size: 36px;
 
-            text-decoration: none;
-            background-color: rgba(white, .7);
-            padding: 15px;
-            border-radius: 10px;
+            &__pic {
+                grid-row: project-two-s/project-two-e;
+                grid-column: madlibs-s/madlibs-e;
+                justify-self: center;
+                align-self: center;
+                border-radius: 5px;
+            }
         }
 
 }

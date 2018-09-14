@@ -1,9 +1,11 @@
 .portfolio {
-    grid-row: content-s/content-e;
+    grid-row: navbar-e/content-e;
     grid-column: content-s/content-e;
 
+
     display: grid;
-    grid-template-rows: [s title-s] 72px [title-e project-s] 300px [project-e project-two-s] 300px [project-two-e] 100px [e];
+    grid-template-rows: [s title-s] 10px [title-e project-s] 300px [project-e project-two-s] 300px [project-two-e] 100px [e];
     grid-template-columns: [s] 1fr [ecom-s] 250px [ecom-e countdown-s] 250px [countdown-e madlibs-s] 250px [madlibs-e] 1fr [e];
     grid-column-gap: 30px;
+    grid-row-gap: 30px;
 }

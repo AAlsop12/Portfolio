@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 class Project extends Component {
     render() {
-        const { className, title, picture, link } = this.props;
+        const { className, title, link } = this.props;
         return (
             <div className={className}>
                 <a href={link}>{title}</a>

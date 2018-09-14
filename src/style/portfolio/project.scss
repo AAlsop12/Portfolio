@@ -1,13 +1,8 @@
 .portfolio {
 
     grid-row-gap: 15px;
-    
-    // &__title {
-    //     grid-row: title-s/title-e;
-    //     grid-column: ecom-s/ecom-e;
-   
+    text-decoration: none !important;
 
-    // }
         & > * {
             text-decoration: none;
             font-size: 36px;
@@ -34,7 +29,6 @@
         .countdown {
             grid-row: project-two-s/project-two-e;
             grid-column: ecom-s/ecom-e;
-            font-size: 36px;
 
             &__pic {
                 grid-row: project-two-s/project-two-e;
@@ -74,7 +68,7 @@
             }
         }
 
-        .portfolio {
+        .project-portfolio {
             grid-row: project-two-s/project-two-e;
             grid-column: madlibs-s/madlibs-e;
 

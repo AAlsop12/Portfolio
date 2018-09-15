@@ -37,13 +37,27 @@
         text-decoration: none;
     }
 
+    &__linked-in:hover {
+        transform: translateY(-1px);
+        cursor: pointer;
+        }
+
     &__github {
         grid-row: github-s/github-e;
         grid-column: info-s/info-e;
         font-size: 36px;
         text-decoration: none;
-
     }
+    &__github:hover {
+        transform: translateY(-1px);
+        cursor: pointer;
+        }
+
+    .countdown__pic:hover {
+        transform: translateY(-1px);
+        cursor: pointer;
+        }
+
     &__aimee-pic {
         grid-row: s/e;
         grid-column: pic-s/pic-e;

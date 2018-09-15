@@ -18,7 +18,7 @@ class Portfolio extends Component {
                          <img src="countdown.png" width='200' height='150'/>
                     </a>
                 <Project className='schedule' title='Course Scheduling' link="https://course-scheduling.herokuapp.com"/>
-                    <a className="schedule__pic" href="https://course-scheduling.herokuapp.com/">                
+                    <a className="schedule__pic" href="https://course-scheduling.herokuapp.com/" >                
                          <img src="schedule.png" width='200' height='150'/>
                     </a>
                 <Project className='github' title='Github' link="https://github.com/AAlsop12"/>

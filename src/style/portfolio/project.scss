@@ -1,16 +1,23 @@
 .portfolio {
+    grid-row: navbar-e/content-e;
+    grid-column: content-s/content-e;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    text-decoration: none;
 
-    grid-row-gap: 15px;
-    text-decoration: none !important;
+    display: grid;
+    grid-template-rows: [s title-s] 10px [title-e project-s] 300px [project-e project-two-s] 300px [project-two-e] 100px [e];
+    grid-template-columns: [s] 1fr [ecom-s] 250px [ecom-e countdown-s] 250px [countdown-e madlibs-s] 250px [madlibs-e] 1fr [e];
+
 
         & > * {
-            text-decoration: none;
             font-size: 36px;
             text-decoration: none;
             background-color: rgba(white, .7);
             padding: 15px;
             border-radius: 10px;
             
+  
         }
 
 
@@ -37,22 +44,34 @@
                 align-self: center;
                 border-radius: 5px;
             }
+
         }
+
+            .countdown__pic:hover {
+                transform: translateY(-1px);
+                cursor: pointer;
+                }
 
         .schedule {
             grid-row: project-s/project-e;
             grid-column: countdown-s/countdown-e;
+            text-decoration: none;
 
 
             &__pic {
+                margin-top: 60px;
                 grid-row: project-s/project-e;
                 grid-column: countdown-s/countdown-e;
                 justify-self: center;
                 align-self: center;
                 border-radius: 5px;
-                transform: translateY(40px)
             }
         }
+
+            .schedule__pic:hover {
+                transform: translateY(-1px);
+                cursor: pointer;
+                }
 
         .github {
             grid-row: project-two-s/project-two-e;
@@ -67,6 +86,10 @@
                 border-radius: 5px;
             }
         }
+            .github__pic:hover {
+                transform: translateY(-1px);
+                cursor: pointer;
+                }
 
         .project-portfolio {
             grid-row: project-two-s/project-two-e;
@@ -80,5 +103,9 @@
                 border-radius: 5px;
             }
         }
+            .project-portfolio__pic:hover {
+                transform: translateY(-1px);
+                cursor: pointer;
+                }
 
 }

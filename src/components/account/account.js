@@ -33,8 +33,9 @@ class Account extends Component {
             },
             {
                 _id: 1,
-                title: 'Blog',
+                title: 'Experience',
                 active: false,
+                path: './experience'
             },
             {
                 _id: 2,
@@ -42,12 +43,12 @@ class Account extends Component {
                 active: false,
                 path: '/portfolio'
             },
-            {
-                _id: 3,
-                title: 'Account Information',
-                active: false,
-                path: '/accountInformation'
-            },
+            // {
+            //     _id: 3,
+            //     title: 'Blog',
+            //     active: false,
+            //     path: '/blog'
+            // },
             {
                 _id: 4,
                 title: 'Contact',

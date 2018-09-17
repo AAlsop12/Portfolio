@@ -3,9 +3,10 @@ import React, {Component} from "react";
 
 class Quote extends Component {
     render() {
+        const { className, quote } = this.props;
         return (
-            <div className='quote'>
-                "Everything in moderation, including moderation."  --Oscar Wilde
+            <div className={className}>
+                {quote}
             </div>
         )
     }

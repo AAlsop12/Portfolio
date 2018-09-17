@@ -1,8 +1,10 @@
 .quote {
     grid-row: content-s/content-e;
-    grid-column: content-s/content-e;
-    justify-self: center;
+    grid-column: button-s/button-e;
+    justify-content: center;
     align-self: center;
+
+    padding: 30px;
 
     font-family: 'Reenie Beanie', cursive;
     font-size: 36px;

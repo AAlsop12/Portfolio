@@ -1,0 +1,39 @@
+.goals {
+    grid-row: content-s/content-e;
+    grid-column: content-s/content-e;
+    background-color: rgba(white, .4);
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+    font-size: 50px;
+
+
+    &__get-skills {
+        font-size: 18px;
+        padding: 20px;
+    }
+    &__get-hired {
+        padding: 20px;
+
+        font-size: 18px;
+      
+    }
+    &__get-experience {
+        padding: 20px;
+
+        font-size: 18px;
+      
+    }
+    &__be-senior {
+        padding: 20px;
+
+        font-size: 18px;
+      
+    }
+    // &__get-skills {
+    //     font-size: 18px;
+      
+    // }
+}

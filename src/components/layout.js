@@ -5,10 +5,13 @@ import Navbar from './headernavbar/navbar';
 import Button from './button';
 import Account from './account/account';
 import {Quotes} from './quote';
+import Quote from './quote';
+
 
 let list = ["first quote", "second quote", "third quote"]
 
 class Layout extends Component {
+  
 
   
   render() {
@@ -18,8 +21,9 @@ class Layout extends Component {
         <Navbar />
         <Account />
         <Button />
+        {/* <Quote /> */}
         {this.props.children}
-        {Quotes(list)}
+        {/* {Quotes(list)} */}
       </div>
     );
   }

@@ -21,7 +21,7 @@ import Experience from './components/experience';
 import About from './components/about';
 import Welcome from './components/welcome';
 import Portfolio from './components/portfolio/portfolio';
-
+import Goals from './components/goals';
 
 
 
@@ -41,6 +41,8 @@ function main() {
             <Route path='/experience' exact component={Experience}/>
             <Route path='/about' exact component={About}/>
             <Route path='/portfolio' exact component={Portfolio}/>
+            <Route path='/goals' exact component={Goals}/>
+
 
           </Switch>
         </Layout>

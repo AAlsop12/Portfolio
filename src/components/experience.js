@@ -7,7 +7,7 @@ class Experience extends Component {
         return (
             <div className='experience'>
                 <PageTitle className='experience__title' title='Experience'/>  
-                
+                Resume experience on its way
             </div>
         )
     }

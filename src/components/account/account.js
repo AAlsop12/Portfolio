@@ -10,6 +10,7 @@ import * as actions from '../../actions';
 class Account extends Component {
 
     componentDidMount() {
+        
 
         const headerLinks = [
             {
@@ -39,16 +40,16 @@ class Account extends Component {
             },
             {
                 _id: 2,
+                title: 'Goals',
+                active: false,
+                path: '/goals'
+            },
+            {
+                _id: 3,
                 title: 'Portfolio',
                 active: false,
                 path: '/portfolio'
             },
-            // {
-            //     _id: 3,
-            //     title: 'Blog',
-            //     active: false,
-            //     path: '/blog'
-            // },
             {
                 _id: 4,
                 title: 'Contact',

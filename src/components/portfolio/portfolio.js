@@ -12,12 +12,15 @@ class Portfolio extends Component {
             <div className='portfolio'>
                 {/* {/* <PageTitle className='portfolio__title' title='Portfolio'/>  */}
                 <Project className='ecommerce' title='Ecommmerce'/>
-                <Project className='madlibs' title='Madlibs'/> 
+                <Project className='madlibs' title='Madlibs' link="https://madlibs23454.herokuapp.com/"/> 
+                    <a className="madlibs__pic" href="https://madlibs23454.herokuapp.com/">                
+                         <img src="madlibs.png" width='200' height='150'/>
+                    </a>
                 <Project className='countdown' title='Countdown' link="https://protected-journey-60036.herokuapp.com/"/>
                     <a className="countdown__pic" href="https://protected-journey-60036.herokuapp.com/">                
                          <img src="countdown.png" width='200' height='150'/>
                     </a>
-                <Project className='schedule' title='Course Scheduling' link="https://course-scheduling.herokuapp.com"/>
+                <Project className='schedule' title='Scheduling' link="https://course-scheduling.herokuapp.com"/>
                     <a className="schedule__pic" href="https://course-scheduling.herokuapp.com/" >                
                          <img src="schedule.png" width='200' height='150'/>
                     </a>

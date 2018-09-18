@@ -25,7 +25,21 @@
             grid-row: project-s/project-e;
             grid-column: madlibs-s/madlibs-e;
 
+            &__pic {
+                grid-row: project-s/project-e;
+                grid-column: madlibs-s/madlibs-e;
+                justify-self: center;
+                align-self: center;
+                border-radius: 5px;
+            }
+
         }
+
+        .madlibs__pic:hover {
+            transform: translateY(-1px);
+            cursor: pointer;
+            }
+
 
         .ecommerce {
             grid-row: project-s/project-e;
@@ -55,11 +69,9 @@
         .schedule {
             grid-row: project-s/project-e;
             grid-column: countdown-s/countdown-e;
-            text-decoration: none;
 
 
             &__pic {
-                margin-top: 60px;
                 grid-row: project-s/project-e;
                 grid-column: countdown-s/countdown-e;
                 justify-self: center;

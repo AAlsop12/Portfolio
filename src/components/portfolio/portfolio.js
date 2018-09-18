@@ -16,8 +16,8 @@ class Portfolio extends Component {
                     <a className="madlibs__pic" href="https://madlibs23454.herokuapp.com/">                
                          <img src="madlibs.png" width='200' height='150'/>
                     </a>
-                <Project className='countdown' title='Countdown' link="https://protected-journey-60036.herokuapp.com/"/>
-                    <a className="countdown__pic" href="https://protected-journey-60036.herokuapp.com/">                
+                <Project className='countdown' title='Countdown' link="https://secret-ocean-94266.herokuapp.com/"/>
+                    <a className="countdown__pic" href="https://secret-ocean-94266.herokuapp.com/">                
                          <img src="countdown.png" width='200' height='150'/>
                     </a>
                 <Project className='schedule' title='Scheduling' link="https://course-scheduling.herokuapp.com"/>

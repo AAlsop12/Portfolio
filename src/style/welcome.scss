@@ -1,6 +1,6 @@
 .welcome {
     grid-row: navbar-s/content-e;
-    grid-column: welcome-s/welcome-e;
+    grid-column: welcome-shell-s/welcome-shell-e;
 
     animation: 1s ease-out 0s 1 slideInFromLeft;
     @keyframes slideInFromLeft {
@@ -66,7 +66,21 @@
         box-shadow: 0 2px 6px 0 rgba(0,0,1,0.5);
 
     }
+    &__quote {
 
+    }
+
+}
+
+.first__quote {
+    grid-row: content-s/content-e;
+    grid-column: s/e;
+    justify-content: center;
+    align-self: end;
+
+    // transform: translateX(500px);
+
+    z-index: -10;
 }
 
 .icon {

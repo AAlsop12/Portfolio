@@ -21,7 +21,7 @@ class Layout extends Component {
         <Navbar />
         <Account />
         <Button />
-        <Quote className='quote' quote="Everything in moderation, including moderation. --Oscar Wilde"/>
+        {/* <Quote className='quote' quote="Everything in moderation, including moderation. --Oscar Wilde"/> */}
         {this.props.children}
         {/* {Quotes(list)} */}
       </div>

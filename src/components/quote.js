@@ -3,10 +3,11 @@ import React, {Component} from "react";
 
 class Quote extends Component {
     render() {
-        const { className, quote } = this.props;
+        const { className, quote, author } = this.props;
         return (
             <div className={className}>
-                {quote}
+                {quote} 
+                {author}
             </div>
         )
     }

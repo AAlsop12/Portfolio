@@ -6,8 +6,23 @@
     border-radius: 5px;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
 
+    display: grid;
+    grid-template-rows: [skills-s] 1fr [skills-e work-s] 1fr [work-e];
+    grid-template-columns: [skills-s] 1fr [skills-e projects-s] 1fr [projects-e];
+    grid-row-gap: 15px;
+    padding: 30px;
 
-    &__top {
-        font-size: 50px;
+    &__skills {
+        grid-row: skills-s/skills-e;
+        grid-column: projects-s/projects-e;
+
+        justify-content: center;
+
+        background-color: rgba(#001a00, .8);
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+        color: white;
+        font-size: 18px;
     }
 }

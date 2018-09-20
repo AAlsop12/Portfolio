@@ -8,7 +8,7 @@ class Experience extends Component {
         return (
             <div className='experience'>
                 <PageTitle className='experience__title' title='Experience'/>  
-                <Dropdown className='projects' headline='Projects' information='React'/>
+                <Dropdown className='experience__skills' headline='Skills' information='React, Redux, Javascript, Python'/>
             </div>
         )
     }

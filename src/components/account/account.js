@@ -32,12 +32,12 @@ class Account extends Component {
                 active: false,
                 path: '/about'
             },
-            // {
-            //     _id: 1,
-            //     title: 'Experience',
-            //     active: false,
-            //     path: './experience'
-            // },
+            {
+                _id: 1,
+                title: 'Experience',
+                active: false,
+                path: './experience'
+            },
             {
                 _id: 2,
                 title: 'Goals',

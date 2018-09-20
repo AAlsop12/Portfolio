@@ -14,7 +14,6 @@ class Welcome extends Component {
     // }
 
     render() {
-        const { className, title, icon } = this.props;
         
         return (
             <div className='welcome-shell'>
@@ -27,8 +26,8 @@ class Welcome extends Component {
                     </div> */}
                     <img className="welcome__aimee-pic" src="https://preview.ibb.co/bzB9vU/Aimee.jpg" width='175' height='250'></img>
                 </div>
-                <div className='welcome-quote-shell'>
-                    <Quote className='first__quote quote' quote="Everything in moderation, including moderation." author="--Oscar Wilde"/>
+                <div className="welcome-shell__quote-shell" >
+                    <Quote className='quote' quote="Everything in moderation, including moderation." author="--Oscar Wilde"/>
                 </div>
             </div>
 

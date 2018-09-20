@@ -17,7 +17,7 @@ import Signin from './components/auth/signin';
 import Signup from './components/auth/signup';
 import Contact from './components/contact';
 import Account from './components/account/account';
-import Experience from './components/experience';
+import Experience from './components/experience/experience';
 import About from './components/about';
 import Welcome from './components/welcome';
 import Portfolio from './components/portfolio/portfolio';

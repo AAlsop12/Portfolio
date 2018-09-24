@@ -11,7 +11,7 @@ class Dropdown extends Component {
         const {height} = this.state;
 
         this.setState({
-            height: height === 0 ? 'auto' : 0,
+            height: (height === 0 ? 'auto' : 0),
         });
     };
 

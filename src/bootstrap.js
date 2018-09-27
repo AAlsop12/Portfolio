@@ -12,7 +12,6 @@ import './style/main.scss';
 import history from './history';
 
 import Layout from './components/layout';
-import Home from './components/home';
 import Signin from './components/auth/signin';
 import Signup from './components/auth/signup';
 import Contact from './components/contact';

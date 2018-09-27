@@ -1,45 +1,71 @@
 import React, { Component } from 'react';
+import { connect, dispatch } from 'react-redux';
+import { fetchExperiences, toggleDescription } from '../../actions'
 import AnimateHeight from 'react-animate-height';
 
 class Dropdown extends Component {
 
-    state = {
-        height: 0,
-    };
+    constructor(props) {
+        super(props)
 
-    toggle = () => {
-        const {height} = this.state;
+        this.renderExperience = this.renderExperience.bind(this);
 
-        this.setState({
-            height: (height === 0 ? 'auto' : 0),
-        });
-    };
+    }
 
+    componentDidMount() {
+        this.props.fetchExperiences()
+    }
 
+    renderExperience(experience) {
+        return (
+            <li key={experience.header} className={`experience ${experience.open ? 'experience__selected' : ''}`}>
+                <div className='experience__info'>
+                    <div className='experience__header-container"'>
+                            <div className='experience.header'onClick={() => this.props.toggleDescription(experience)}>{experience.header}</div>      
+                    </div> 
+
+                    <a className={`'experience__arrow ${experience.open ? null : 'experience__arrow-close'}`} ></a>
+
+                </div>
+            <AnimateHeight
+                duration={ 300 }
+                height={ experience.open ? 'auto' : '0' } 
+                >
+                    <div className={`experience__description`}>
+                        <h6 className='experience__description-title'></h6>
+                        <p>{experience.description}</p>
+                    </div>
+            </AnimateHeight>
+
+            </li>
+        )
+    }
 
     render() {
-        const { height } = this.state;
-
-        const { className, headline, information } = this.props;
-
         return (
-        
-            <div> 
-                <button onClick={ this.toggle }>
-                    { height === 0 ? 'Open' : 'Close' }
-                </button>
+            <ul>
 
-                <AnimateHeight
-                    duration={ 300 }
-                    height={ 'auto' }>
-                        <h6>Skills</h6>
-                        <p>"React, Redux, Javascript"</p>
-                </AnimateHeight>
-        </div>     
+                {this.props.experiences.map(this.renderExperience)}
+            </ul>
            
-        );
+        )
+    }
+}
+
+function mapStateToProps(state) {
+    return { experiences: state.experiences }
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        fetchExperiences: () => {
+            dispatch(fetchExperiences())
+        },
+        toggleDescription:(experience) => {
+            dispatch(toggleDescription(experience))
+        }
     }
 }
 
 
-export default Dropdown;
+export default connect(mapStateToProps, mapDispatchToProps)(Dropdown);

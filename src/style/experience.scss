@@ -1,4 +1,9 @@
-.experience {
+.action { 
+    transition: all .3s ease;
+}
+
+
+.resume {
     grid-row: content-s/content-e;
     grid-column: content-s/content-e;
     background-color: rgba(white, .4);
@@ -6,23 +11,65 @@
     border-radius: 5px;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
 
-    display: grid;
-    grid-template-rows: [skills-s] 1fr [skills-e work-s] 1fr [work-e];
-    grid-template-columns: [skills-s] 1fr [skills-e projects-s] 1fr [projects-e];
-    grid-row-gap: 15px;
-    padding: 30px;
+}
 
-    &__skills {
-        grid-row: skills-s/skills-e;
-        grid-column: projects-s/projects-e;
-
-        justify-content: center;
-
-        background-color: rgba(#001a00, .8);
-        padding: 15px;
-        border-radius: 5px;
-        box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
-        color: white;
-        font-size: 18px;
+.experience:hover {
+    cursor: pointer;
+    background-color: white;    
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.21);
+    transition: all .4s ease;
+    .action {
+        opacity: 1;
     }
+}
+
+.experience__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.experience__arrow {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid black;
+    transition: all .3s ease;
+}
+
+.experience__arrow-close {
+    transform: rotate(180deg);
+}
+
+.experience__header {
+    align-content: center;
+}
+.experience__header-container {
+    width: 85%;
+    display: flex;
+    justify-content: left;
+    align-content: center;
+}
+
+.experience__selected {
+    background-color: white;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.21);
+}
+
+.experience {
+    min-height: 60px;
+    transition: all .4s ease;
+    padding: 20px;
+    font-size: 24px;
+    list-style: none;
+    align-self: center;
+}
+
+
+
+@mixin position-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

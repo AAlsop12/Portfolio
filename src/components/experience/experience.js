@@ -6,9 +6,9 @@ import Dropdown from './dropdown';
 class Experience extends Component {
     render() {
         return (
-            <div className='experience'>
+            <div className='resume'>
                 <PageTitle className='experience__title' title='Experience'/>  
-                <Dropdown className='experience__skills' headline='Skills' information='React, Redux, Javascript, Python'/>
+                <Dropdown />
             </div>
         )
     }

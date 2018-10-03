@@ -21,11 +21,12 @@ class Dropdown extends Component {
             <li key={experience.header} className={`experience ${experience.open ? 'experience__selected' : ''}`}>
                 <div className='experience__info'>
                     <div className='experience__header-container"'>
-                            <div className='experience.header'onClick={() => this.props.toggleDescription(experience)}>{experience.header}</div>      
+                            <div className='experience__header' onClick={() => this.props.toggleDescription(experience)}>{experience.header}</div>      
                     </div> 
 
-                    <a className={`'experience__arrow ${experience.open ? null : 'experience__arrow-close'}`} ></a>
+                    <i className = "experience__arrow"  class="fas fa-chevron-circle-down" onClick={() => this.props.toggleDescription(experience)}></i>
 
+ {/* {`'experience__arrow ${experience.open ? 'null' : 'experience__arrow-close'}`} */}
                 </div>
             <AnimateHeight
                 duration={ 300 }
@@ -33,7 +34,8 @@ class Dropdown extends Component {
                 >
                     <div className={`experience__description`}>
                         <h6 className='experience__description-title'></h6>
-                        <p>{experience.description}</p>
+                        <p className='experience__description-infoOne'>{experience.descriptionOne}</p>
+                        <p className='experience__description-infoTwo'>{experience.descriptionTwo}</p>
                     </div>
             </AnimateHeight>
 

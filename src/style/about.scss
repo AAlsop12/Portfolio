@@ -1,6 +1,19 @@
 .about {
     grid-row: content-s/content-e;
-    grid-column: content-s/content-e;
+    grid-column: s/e; 
+    display: grid;
+    grid-template-rows: [s tpic-s] 300px [tpic-e bpic-s] 300px [bpic-e e];
+    grid-template-columns: [lpic-s] 1fr [lpic-e info-s] 3fr [info-e rpic-s] 1fr [pic-e];
+
+    &__info {
+        font-size: 30px;
+        
+    }
+}
+
+.about-wrapper {
+    grid-row: s/e;
+    grid-column: info-s/info-e;
     background-color: rgba(white, .4);
     padding: 15px;
     padding-left: 30px;
@@ -15,8 +28,25 @@
         // grid-column: s/e;
       
     }
-    &__info {
-        font-size: 32px;
-        
-    }
+
+
+}
+
+
+
+.about-guatamala {
+    grid-row: tpic-s/tpic-e;
+    grid-column: lpic-s/lpic-e;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+
+}
+
+
+.about-ski {
+    grid-row: bpic-s/bpic-e;
+    grid-column: lpic-s/lpic-e;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+
 }
